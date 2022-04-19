@@ -5,4 +5,8 @@ dependencies {
     // https://mvnrepository.com/artifact/io.github.openfeign
     implementation 'io.github.openfeign:feign-okhttp'
     implementation 'io.github.openfeign:feign-jackson'
+
+    // Java 8 date/time 에러 해결용
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }
