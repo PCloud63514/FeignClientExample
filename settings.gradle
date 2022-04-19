@@ -1,5 +1,6 @@
-rootProject.name = 'webapp-ohlot'
+rootProject.name = 'FeignClientExample'
 
 include ':components:module-ohlot'
+include ':components:module-feign'
 include ':components:module-swagger'
 include ':applications:app-ohlot'
