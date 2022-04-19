@@ -35,7 +35,7 @@ class GoodWordApiTest {
     void addGoodWord_createdHttpStatus() throws Exception {
         mockMvc.perform(post("/good-words")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{}"))
+                .content("{\"content\":\"좋은 생각 중인가요?\"}"))
                 .andExpect(status().isCreated());
     }
 
@@ -43,9 +43,9 @@ class GoodWordApiTest {
     void addGoodWord_returnValue() throws Exception {
         mockMvc.perform(post("/good-words")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content("{ \"content\":\"content1\" }"))
+                        .content("{ \"content\":\"부끄부끄\" }"))
                 .andExpect(jsonPath("$.id", equalTo("id")))
-                .andExpect(jsonPath("$.content", equalTo("content1")))
+                .andExpect(jsonPath("$.content", equalTo("부끄부끄")))
                 .andExpect(status().isCreated());
     }
 
