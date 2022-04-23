@@ -1,6 +1,6 @@
 # FeignClientExample
 
-TStory url: ""
+
 > FeignClient 예제
 
 ### FeignClientExample clone repository
